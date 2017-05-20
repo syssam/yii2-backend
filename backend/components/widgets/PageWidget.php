@@ -62,16 +62,14 @@ abstract class PageWidget extends \yii\base\Widget
 
     protected function renderPanelHeader()
     {
-        $panelTitle = $this->model->isNewRecord ? 'Create' : 'Edit';
-
         return '<div class="panel-heading">
-                 <h3 class="panel-title"><i class="fa fa-list"></i> '.$panelTitle.$this->title.'</h3>
+                 <h3 class="panel-title"><i class="fa fa-list"></i>'.$this->panelTitle.'</h3>
                 </div>';
     }
 
     protected function renderPanelBody()
     {
-        return '<div class=\"panel-body\">'.$this->content.'</div>';
+        return '<div class="panel-body">'.$this->content.'</div>';
     }
 
     protected function renderContainer()

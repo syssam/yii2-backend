@@ -7,7 +7,7 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 ?>
     <?php $form = ActiveForm::begin([
-        'id' => strtolower($model->formName()).'-form',
+        'id' => $model->formName(),
         'options' => [
             'class' => 'form-horizontal',
             'enctype' => 'multipart/form-data',
@@ -30,11 +30,17 @@ use yii\widgets\ActiveForm;
       'labelOptions' => [
           'class' => 'col-sm-2 control-label',
       ],
+      'options' => [
+          'class' => $model->isNewRecord ? 'form-group required' : 'form-group',
+      ],
     ])->passwordInput(['autofocus' => true]) ?>
     <?= $form->field($model, 'comfirm', [
       'template' => '{label}<div class="col-sm-10">{input}{error}</div>',
       'labelOptions' => [
           'class' => 'col-sm-2 control-label',
+      ],
+      'options' => [
+          'class' => $model->isNewRecord ? 'form-group required' : 'form-group',
       ],
     ])->passwordInput(['autofocus' => true]) ?>
     <?= $form->field($model, 'status', [

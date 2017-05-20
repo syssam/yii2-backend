@@ -10,7 +10,7 @@ if (Yii::$app->user->isGuest) {
       <i class="fa fa-google"></i>
     </div>
     <div>
-      <h4>John Doe</h4>
+      <h4><?=ucfirst(Yii::$app->user->identity->username); ?></h4>
       <small>Administrator</small>
     </div>
   </div>

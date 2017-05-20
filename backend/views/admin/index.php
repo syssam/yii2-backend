@@ -21,6 +21,7 @@ PageSearch::begin([
   'title' => $this->title,
   'headerButton' => 'backend\components\grid\headerButton',
   'model' => $searchModel,
+  'panelTitle' => 'Admin List',
 ]); ?>
 <?= GridView::widget([
         'dataProvider' => $dataProvider,

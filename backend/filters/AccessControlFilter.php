@@ -1,4 +1,5 @@
 <?php
+
 namespace backend\filters;
 
 use yii;
@@ -15,23 +16,26 @@ class AccessControlFilter extends ActionFilter
         parent::init();
         $this->user = Instance::ensure($this->user, User::className());
     }
+
     /**
      * This method is invoked right before an action is to be executed (after all possible filters.)
      * You may override this method to do last-minute preparation for the action.
-     * @param Action $action the action to be executed.
-     * @return bool whether the action should continue to be executed.
+     *
+     * @param Action $action the action to be executed
+     *
+     * @return bool whether the action should continue to be executed
      */
     public function beforeAction($action)
     {
         $user = $this->user;
         $route = Yii::$app->controller->route;
 
-        if($route == "common/login") {
+        if ($route == 'common/login') {
             return true;
         } else {
-            if($this->denyAccess($user)) {
-              return true;
-            };
+            if ($this->denyAccess($user)) {
+                return true;
+            }
         }
 
         return false;
@@ -57,7 +61,7 @@ class AccessControlFilter extends ActionFilter
 
     protected function renderAjaxResponse()
     {
-        return $this->getExceptionName() . ': ' . $this->getExceptionMessage();
+        return $this->getExceptionName().': '.$this->getExceptionMessage();
     }
 
     protected function renderHtmlResponse()
@@ -65,4 +69,3 @@ class AccessControlFilter extends ActionFilter
         return Yii::$app->controller->render('/common/index');
     }
 }
-?>

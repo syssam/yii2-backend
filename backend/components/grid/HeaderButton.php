@@ -40,6 +40,8 @@ class HeaderButton extends Widget
 
     protected function initDefaultButton($name, $iconName)
     {
+        $this->buttonOptions = [];
+
         if (!isset($this->buttons[$name]) && strpos($this->template, '{'.$name.'}') !== false && in_array($name, $this->visibleButtons)) {
             switch ($name) {
                 case 'create':
@@ -55,7 +57,7 @@ class HeaderButton extends Widget
                   break;
                 case 'save':
                   $title = $this->model->isNewRecord ? Yii::t('app', 'Create') : Yii::t('yii', 'Save');
-                  $this->buttonOptions['data-form'] = strtolower($this->model->formName()).'-form';
+                  $this->buttonOptions['data-form'] = $this->model->formName();
                   break;
                 case 'cancel':
                   $title = Yii::t('yii', 'Cancel');

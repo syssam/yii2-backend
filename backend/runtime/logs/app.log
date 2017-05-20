@@ -47608,3 +47608,1180 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1495205835.065
     'REQUEST_TIME' => 1495205835
 ]
+2017-05-20 12:46:42 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][error][ParseError] ParseError: syntax error, unexpected ',', expecting ';' in /Applications/XAMPP/xamppfiles/htdocs/fang/backend/models/AdminForm.php:38
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/controllers/AdminController.php(122): spl_autoload_call('backend\\models\\...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/controllers/AdminController.php(74): backend\controllers\AdminController->findModel('3')
+#3 [internal function]: backend\controllers\AdminController->actionUpdate('3')
+#4 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('admin/update', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2017-05-20 12:46:42 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][info][application] $_GET = [
+    'r' => 'admin/update'
+    'id' => '3'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"2rjPHisWFyqy337TcULkD6bhGGiVDUe2\";}'
+    'advanced-backend' => 'fnbsgfok5io6h774bl3b6oh8s3'
+    'PHPSESSID' => 'lmf6mcj3blkk6u98o8cla4cbp0'
+    'default' => 'vd4k3effjfogupu8gm104i9lr5'
+    '_identity-backend' => '449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"6mEgDVgcKYbMoh56elU67j_-OpPOcyTJ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fang/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WSAeksCoAGgAAAkjf8AAAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/fang/backend/web/index.php?r=admin%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-HK,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,zh-CN;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222rjPHisWFyqy337TcULkD6bhGGiVDUe2%22%3B%7D; advanced-backend=fnbsgfok5io6h774bl3b6oh8s3; PHPSESSID=lmf6mcj3blkk6u98o8cla4cbp0; default=vd4k3effjfogupu8gm104i9lr5; _identity-backend=449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%226mEgDVgcKYbMoh56elU67j_-OpPOcyTJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/7.0.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php'
+    'REMOTE_PORT' => '53524'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fupdate&id=3'
+    'REQUEST_URI' => '/fang/backend/web/index.php?r=admin%2Fupdate&id=3'
+    'SCRIPT_NAME' => '/fang/backend/web/index.php'
+    'PHP_SELF' => '/fang/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495277202.12
+    'REQUEST_TIME' => 1495277202
+]
+2017-05-20 12:46:50 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][error][ParseError] ParseError: syntax error, unexpected ',', expecting ';' in /Applications/XAMPP/xamppfiles/htdocs/fang/backend/models/AdminForm.php:38
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/controllers/AdminController.php(122): spl_autoload_call('backend\\models\\...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/controllers/AdminController.php(74): backend\controllers\AdminController->findModel('3')
+#3 [internal function]: backend\controllers\AdminController->actionUpdate('3')
+#4 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('admin/update', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2017-05-20 12:46:50 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][info][application] $_GET = [
+    'r' => 'admin/update'
+    'id' => '3'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"2rjPHisWFyqy337TcULkD6bhGGiVDUe2\";}'
+    'advanced-backend' => 'fnbsgfok5io6h774bl3b6oh8s3'
+    'PHPSESSID' => 'lmf6mcj3blkk6u98o8cla4cbp0'
+    'default' => 'vd4k3effjfogupu8gm104i9lr5'
+    '_identity-backend' => '449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"6mEgDVgcKYbMoh56elU67j_-OpPOcyTJ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fang/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WSAemsCoAGgAAAZvftwAAAAH'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/fang/backend/web/index.php?r=admin%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-HK,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,zh-CN;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222rjPHisWFyqy337TcULkD6bhGGiVDUe2%22%3B%7D; advanced-backend=fnbsgfok5io6h774bl3b6oh8s3; PHPSESSID=lmf6mcj3blkk6u98o8cla4cbp0; default=vd4k3effjfogupu8gm104i9lr5; _identity-backend=449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%226mEgDVgcKYbMoh56elU67j_-OpPOcyTJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/7.0.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php'
+    'REMOTE_PORT' => '53528'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fupdate&id=3'
+    'REQUEST_URI' => '/fang/backend/web/index.php?r=admin%2Fupdate&id=3'
+    'SCRIPT_NAME' => '/fang/backend/web/index.php'
+    'PHP_SELF' => '/fang/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495277210.309
+    'REQUEST_TIME' => 1495277210
+]
+2017-05-20 12:46:51 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][error][ParseError] ParseError: syntax error, unexpected ',', expecting ';' in /Applications/XAMPP/xamppfiles/htdocs/fang/backend/models/AdminForm.php:38
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/controllers/AdminController.php(122): spl_autoload_call('backend\\models\\...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/controllers/AdminController.php(74): backend\controllers\AdminController->findModel('3')
+#3 [internal function]: backend\controllers\AdminController->actionUpdate('3')
+#4 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('admin/update', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2017-05-20 12:46:51 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][info][application] $_GET = [
+    'r' => 'admin/update'
+    'id' => '3'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"2rjPHisWFyqy337TcULkD6bhGGiVDUe2\";}'
+    'advanced-backend' => 'fnbsgfok5io6h774bl3b6oh8s3'
+    'PHPSESSID' => 'lmf6mcj3blkk6u98o8cla4cbp0'
+    'default' => 'vd4k3effjfogupu8gm104i9lr5'
+    '_identity-backend' => '449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"6mEgDVgcKYbMoh56elU67j_-OpPOcyTJ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fang/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WSAem8CoAGgAAApjaSsAAAAL'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/fang/backend/web/index.php?r=admin%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-HK,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,zh-CN;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222rjPHisWFyqy337TcULkD6bhGGiVDUe2%22%3B%7D; advanced-backend=fnbsgfok5io6h774bl3b6oh8s3; PHPSESSID=lmf6mcj3blkk6u98o8cla4cbp0; default=vd4k3effjfogupu8gm104i9lr5; _identity-backend=449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%226mEgDVgcKYbMoh56elU67j_-OpPOcyTJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/7.0.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php'
+    'REMOTE_PORT' => '53529'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fupdate&id=3'
+    'REQUEST_URI' => '/fang/backend/web/index.php?r=admin%2Fupdate&id=3'
+    'SCRIPT_NAME' => '/fang/backend/web/index.php'
+    'PHP_SELF' => '/fang/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495277211.346
+    'REQUEST_TIME' => 1495277211
+]
+2017-05-20 12:57:08 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\widgets\ActiveField::Options in /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Component.php:201
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/BaseYii.php(525): yii\base\Component->__set('Options', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\widgets\ActiveField), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\widgets\\Act...', Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\widgets\\Act...', Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/widgets/ActiveForm.php(301): yii\BaseYii::createObject(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/admin/_form.php(29): yii\widgets\ActiveForm->field(Object(backend\models\AdminForm), 'password', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, NULL)
+#11 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/admin/update.php(22): yii\base\View->render('_form', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#13 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\AdminController))
+#15 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\AdminController))
+#16 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/controllers/AdminController.php(80): yii\base\Controller->render('update', Array)
+#17 [internal function]: backend\controllers\AdminController->actionUpdate('2')
+#18 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#19 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#20 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('admin/update', Array)
+#22 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php(17): yii\base\Application->run()
+#24 {main}
+2017-05-20 12:57:08 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][info][application] $_GET = [
+    'r' => 'admin/update'
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"2rjPHisWFyqy337TcULkD6bhGGiVDUe2\";}'
+    'advanced-backend' => 'fnbsgfok5io6h774bl3b6oh8s3'
+    'PHPSESSID' => 'lmf6mcj3blkk6u98o8cla4cbp0'
+    'default' => 'vd4k3effjfogupu8gm104i9lr5'
+    '_identity-backend' => '449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"6mEgDVgcKYbMoh56elU67j_-OpPOcyTJ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fang/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WSAhBMCoAGgAAAkjf8QAAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/fang/backend/web/index.php?r=admin%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-HK,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,zh-CN;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222rjPHisWFyqy337TcULkD6bhGGiVDUe2%22%3B%7D; advanced-backend=fnbsgfok5io6h774bl3b6oh8s3; PHPSESSID=lmf6mcj3blkk6u98o8cla4cbp0; default=vd4k3effjfogupu8gm104i9lr5; _identity-backend=449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%226mEgDVgcKYbMoh56elU67j_-OpPOcyTJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/7.0.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php'
+    'REMOTE_PORT' => '54316'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fupdate&id=2'
+    'REQUEST_URI' => '/fang/backend/web/index.php?r=admin%2Fupdate&id=2'
+    'SCRIPT_NAME' => '/fang/backend/web/index.php'
+    'PHP_SELF' => '/fang/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495277828.217
+    'REQUEST_TIME' => 1495277828
+]
+2017-05-20 12:59:39 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\web\View::isNewRecord in /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/admin/_form.php(34): yii\base\Component->__get('isNewRecord')
+#1 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/admin/update.php(22): yii\base\View->render('_form', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\AdminController))
+#8 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\AdminController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/controllers/AdminController.php(80): yii\base\Controller->render('update', Array)
+#10 [internal function]: backend\controllers\AdminController->actionUpdate('2')
+#11 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('admin/update', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-05-20 12:59:39 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][info][application] $_GET = [
+    'r' => 'admin/update'
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"2rjPHisWFyqy337TcULkD6bhGGiVDUe2\";}'
+    'advanced-backend' => 'fnbsgfok5io6h774bl3b6oh8s3'
+    'PHPSESSID' => 'lmf6mcj3blkk6u98o8cla4cbp0'
+    'default' => 'vd4k3effjfogupu8gm104i9lr5'
+    '_identity-backend' => '449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"6mEgDVgcKYbMoh56elU67j_-OpPOcyTJ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fang/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WSAhm8CoAGgAAAZMkXIAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/fang/backend/web/index.php?r=admin%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-HK,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,zh-CN;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222rjPHisWFyqy337TcULkD6bhGGiVDUe2%22%3B%7D; advanced-backend=fnbsgfok5io6h774bl3b6oh8s3; PHPSESSID=lmf6mcj3blkk6u98o8cla4cbp0; default=vd4k3effjfogupu8gm104i9lr5; _identity-backend=449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%226mEgDVgcKYbMoh56elU67j_-OpPOcyTJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/7.0.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php'
+    'REMOTE_PORT' => '54444'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fupdate&id=2'
+    'REQUEST_URI' => '/fang/backend/web/index.php?r=admin%2Fupdate&id=2'
+    'SCRIPT_NAME' => '/fang/backend/web/index.php'
+    'PHP_SELF' => '/fang/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495277979.588
+    'REQUEST_TIME' => 1495277979
+]
+2017-05-20 13:00:03 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][error][ParseError] ParseError: syntax error, unexpected ',' in /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/admin/_form.php:34
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/admin/update.php(22): yii\base\View->render('_form', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\AdminController))
+#6 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('update', Array, Object(backend\controllers\AdminController))
+#7 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/controllers/AdminController.php(80): yii\base\Controller->render('update', Array)
+#8 [internal function]: backend\controllers\AdminController->actionUpdate('2')
+#9 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('update', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('admin/update', Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php(17): yii\base\Application->run()
+#15 {main}
+2017-05-20 13:00:03 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][info][application] $_GET = [
+    'r' => 'admin/update'
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"2rjPHisWFyqy337TcULkD6bhGGiVDUe2\";}'
+    'advanced-backend' => 'fnbsgfok5io6h774bl3b6oh8s3'
+    'PHPSESSID' => 'lmf6mcj3blkk6u98o8cla4cbp0'
+    'default' => 'vd4k3effjfogupu8gm104i9lr5'
+    '_identity-backend' => '449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"6mEgDVgcKYbMoh56elU67j_-OpPOcyTJ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fang/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WSAhs8CoAGgAAAHDCEkAAAAD'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/fang/backend/web/index.php?r=admin%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-HK,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,zh-CN;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222rjPHisWFyqy337TcULkD6bhGGiVDUe2%22%3B%7D; advanced-backend=fnbsgfok5io6h774bl3b6oh8s3; PHPSESSID=lmf6mcj3blkk6u98o8cla4cbp0; default=vd4k3effjfogupu8gm104i9lr5; _identity-backend=449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%226mEgDVgcKYbMoh56elU67j_-OpPOcyTJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/7.0.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php'
+    'REMOTE_PORT' => '54448'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fupdate&id=2'
+    'REQUEST_URI' => '/fang/backend/web/index.php?r=admin%2Fupdate&id=2'
+    'SCRIPT_NAME' => '/fang/backend/web/index.php'
+    'PHP_SELF' => '/fang/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495278003.84
+    'REQUEST_TIME' => 1495278003
+]
+2017-05-20 13:05:06 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: panelTitle in /Applications/XAMPP/xamppfiles/htdocs/fang/backend/components/widgets/PageWidget.php:65
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/components/widgets/PageWidget.php(65): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Applications/X...', 65, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/components/widgets/PageWidget.php(60): backend\components\widgets\PageWidget->renderPanelHeader()
+#2 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/components/widgets/PageWidget.php(83): backend\components\widgets\PageWidget->renderPanel()
+#3 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/components/widgets/PageWidget.php(28): backend\components\widgets\PageWidget->renderContainer()
+#4 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Widget.php(109): backend\components\widgets\PageWidget->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/admin/index.php(58): yii\base\Widget::end()
+#6 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\AdminController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\AdminController))
+#10 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/controllers/AdminController.php(27): yii\base\Controller->render('index', Array)
+#11 [internal function]: backend\controllers\AdminController->actionIndex()
+#12 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('admin/index', Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php(17): yii\base\Application->run()
+#18 {main}
+2017-05-20 13:05:06 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][info][application] $_GET = [
+    'r' => 'admin/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"2rjPHisWFyqy337TcULkD6bhGGiVDUe2\";}'
+    'advanced-backend' => 'fnbsgfok5io6h774bl3b6oh8s3'
+    'PHPSESSID' => 'lmf6mcj3blkk6u98o8cla4cbp0'
+    'default' => 'vd4k3effjfogupu8gm104i9lr5'
+    '_identity-backend' => '449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"6mEgDVgcKYbMoh56elU67j_-OpPOcyTJ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fang/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WSAi4sCoAGgAAAZvfvQAAAAH'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/fang/backend/web/index.php?r=admin%2Fupdate&id=3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-HK,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,zh-CN;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222rjPHisWFyqy337TcULkD6bhGGiVDUe2%22%3B%7D; advanced-backend=fnbsgfok5io6h774bl3b6oh8s3; PHPSESSID=lmf6mcj3blkk6u98o8cla4cbp0; default=vd4k3effjfogupu8gm104i9lr5; _identity-backend=449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%226mEgDVgcKYbMoh56elU67j_-OpPOcyTJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/7.0.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php'
+    'REMOTE_PORT' => '54459'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Findex'
+    'REQUEST_URI' => '/fang/backend/web/index.php?r=admin%2Findex'
+    'SCRIPT_NAME' => '/fang/backend/web/index.php'
+    'PHP_SELF' => '/fang/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495278306.237
+    'REQUEST_TIME' => 1495278306
+]
+2017-05-20 13:05:07 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: panelTitle in /Applications/XAMPP/xamppfiles/htdocs/fang/backend/components/widgets/PageWidget.php:65
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/components/widgets/PageWidget.php(65): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Applications/X...', 65, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/components/widgets/PageWidget.php(60): backend\components\widgets\PageWidget->renderPanelHeader()
+#2 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/components/widgets/PageWidget.php(83): backend\components\widgets\PageWidget->renderPanel()
+#3 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/components/widgets/PageWidget.php(28): backend\components\widgets\PageWidget->renderContainer()
+#4 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Widget.php(109): backend\components\widgets\PageWidget->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/admin/index.php(58): yii\base\Widget::end()
+#6 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\AdminController))
+#9 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\AdminController))
+#10 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/controllers/AdminController.php(27): yii\base\Controller->render('index', Array)
+#11 [internal function]: backend\controllers\AdminController->actionIndex()
+#12 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('admin/index', Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php(17): yii\base\Application->run()
+#18 {main}
+2017-05-20 13:05:07 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][info][application] $_GET = [
+    'r' => 'admin/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"2rjPHisWFyqy337TcULkD6bhGGiVDUe2\";}'
+    'advanced-backend' => 'fnbsgfok5io6h774bl3b6oh8s3'
+    'PHPSESSID' => 'lmf6mcj3blkk6u98o8cla4cbp0'
+    'default' => 'vd4k3effjfogupu8gm104i9lr5'
+    '_identity-backend' => '449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"6mEgDVgcKYbMoh56elU67j_-OpPOcyTJ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fang/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WSAi48CoAGgAAA3t14MAAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/fang/backend/web/index.php?r=admin%2Fupdate&id=3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-HK,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,zh-CN;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222rjPHisWFyqy337TcULkD6bhGGiVDUe2%22%3B%7D; advanced-backend=fnbsgfok5io6h774bl3b6oh8s3; PHPSESSID=lmf6mcj3blkk6u98o8cla4cbp0; default=vd4k3effjfogupu8gm104i9lr5; _identity-backend=449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%226mEgDVgcKYbMoh56elU67j_-OpPOcyTJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/7.0.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php'
+    'REMOTE_PORT' => '54460'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Findex'
+    'REQUEST_URI' => '/fang/backend/web/index.php?r=admin%2Findex'
+    'SCRIPT_NAME' => '/fang/backend/web/index.php'
+    'PHP_SELF' => '/fang/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495278307.609
+    'REQUEST_TIME' => 1495278307
+]
+2017-05-20 13:10:05 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][error][ParseError] ParseError: syntax error, unexpected '/' in /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/common/_menu.php:22
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/layouts/main.php(27): yii\base\View->render('/common/_menu')
+#3 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\AdminController))
+#6 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<div id="p0" da...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/controllers/AdminController.php(27): yii\base\Controller->render('index', Array)
+#8 [internal function]: backend\controllers\AdminController->actionIndex()
+#9 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('admin/index', Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php(17): yii\base\Application->run()
+#15 {main}
+2017-05-20 13:10:05 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][info][application] $_GET = [
+    'r' => 'admin/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"2rjPHisWFyqy337TcULkD6bhGGiVDUe2\";}'
+    'advanced-backend' => 'fnbsgfok5io6h774bl3b6oh8s3'
+    'PHPSESSID' => 'lmf6mcj3blkk6u98o8cla4cbp0'
+    'default' => 'vd4k3effjfogupu8gm104i9lr5'
+    '_identity-backend' => '449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"6mEgDVgcKYbMoh56elU67j_-OpPOcyTJ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fang/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WSAkDcCoAGgAAAZMkYAAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/fang/backend/web/index.php?r=common%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-HK,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,zh-CN;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222rjPHisWFyqy337TcULkD6bhGGiVDUe2%22%3B%7D; advanced-backend=fnbsgfok5io6h774bl3b6oh8s3; PHPSESSID=lmf6mcj3blkk6u98o8cla4cbp0; default=vd4k3effjfogupu8gm104i9lr5; _identity-backend=449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%226mEgDVgcKYbMoh56elU67j_-OpPOcyTJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/7.0.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php'
+    'REMOTE_PORT' => '54487'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Findex'
+    'REQUEST_URI' => '/fang/backend/web/index.php?r=admin%2Findex'
+    'SCRIPT_NAME' => '/fang/backend/web/index.php'
+    'PHP_SELF' => '/fang/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495278605.699
+    'REQUEST_TIME' => 1495278605
+]
+2017-05-20 13:10:10 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\web\User::username in /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/common/_menu.php(22): yii\base\Component->__get('username')
+#1 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/layouts/main.php(27): yii\base\View->render('/common/_menu')
+#5 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\AdminController))
+#8 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<div id="p0" da...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/controllers/AdminController.php(27): yii\base\Controller->render('index', Array)
+#10 [internal function]: backend\controllers\AdminController->actionIndex()
+#11 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('admin/index', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-05-20 13:10:10 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][info][application] $_GET = [
+    'r' => 'admin/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"2rjPHisWFyqy337TcULkD6bhGGiVDUe2\";}'
+    'advanced-backend' => 'fnbsgfok5io6h774bl3b6oh8s3'
+    'PHPSESSID' => 'lmf6mcj3blkk6u98o8cla4cbp0'
+    'default' => 'vd4k3effjfogupu8gm104i9lr5'
+    '_identity-backend' => '449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"6mEgDVgcKYbMoh56elU67j_-OpPOcyTJ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fang/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WSAkEsCoAGgAAA3t14YAAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/fang/backend/web/index.php?r=common%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-HK,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,zh-CN;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222rjPHisWFyqy337TcULkD6bhGGiVDUe2%22%3B%7D; advanced-backend=fnbsgfok5io6h774bl3b6oh8s3; PHPSESSID=lmf6mcj3blkk6u98o8cla4cbp0; default=vd4k3effjfogupu8gm104i9lr5; _identity-backend=449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%226mEgDVgcKYbMoh56elU67j_-OpPOcyTJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/7.0.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php'
+    'REMOTE_PORT' => '54488'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Findex'
+    'REQUEST_URI' => '/fang/backend/web/index.php?r=admin%2Findex'
+    'SCRIPT_NAME' => '/fang/backend/web/index.php'
+    'PHP_SELF' => '/fang/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495278610.791
+    'REQUEST_TIME' => 1495278610
+]
+2017-05-20 13:10:12 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\web\User::username in /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/common/_menu.php(22): yii\base\Component->__get('username')
+#1 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/layouts/main.php(27): yii\base\View->render('/common/_menu')
+#5 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\AdminController))
+#8 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<div id="p0" da...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/controllers/AdminController.php(27): yii\base\Controller->render('index', Array)
+#10 [internal function]: backend\controllers\AdminController->actionIndex()
+#11 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('admin/index', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-05-20 13:10:12 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][info][application] $_GET = [
+    'r' => 'admin/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"2rjPHisWFyqy337TcULkD6bhGGiVDUe2\";}'
+    'advanced-backend' => 'fnbsgfok5io6h774bl3b6oh8s3'
+    'PHPSESSID' => 'lmf6mcj3blkk6u98o8cla4cbp0'
+    'default' => 'vd4k3effjfogupu8gm104i9lr5'
+    '_identity-backend' => '449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"6mEgDVgcKYbMoh56elU67j_-OpPOcyTJ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fang/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WSAkFMCoAGgAAAHC0SkAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/fang/backend/web/index.php?r=common%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-HK,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,zh-CN;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222rjPHisWFyqy337TcULkD6bhGGiVDUe2%22%3B%7D; advanced-backend=fnbsgfok5io6h774bl3b6oh8s3; PHPSESSID=lmf6mcj3blkk6u98o8cla4cbp0; default=vd4k3effjfogupu8gm104i9lr5; _identity-backend=449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%226mEgDVgcKYbMoh56elU67j_-OpPOcyTJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/7.0.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php'
+    'REMOTE_PORT' => '54489'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Findex'
+    'REQUEST_URI' => '/fang/backend/web/index.php?r=admin%2Findex'
+    'SCRIPT_NAME' => '/fang/backend/web/index.php'
+    'PHP_SELF' => '/fang/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495278612.181
+    'REQUEST_TIME' => 1495278612
+]
+2017-05-20 13:10:19 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\web\User::username in /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/common/_menu.php(22): yii\base\Component->__get('username')
+#1 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/layouts/main.php(27): yii\base\View->render('/common/_menu')
+#5 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\AdminController))
+#8 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<div id="p0" da...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/controllers/AdminController.php(27): yii\base\Controller->render('index', Array)
+#10 [internal function]: backend\controllers\AdminController->actionIndex()
+#11 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('admin/index', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-05-20 13:10:19 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][info][application] $_GET = [
+    'r' => 'admin/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"2rjPHisWFyqy337TcULkD6bhGGiVDUe2\";}'
+    'advanced-backend' => 'fnbsgfok5io6h774bl3b6oh8s3'
+    'PHPSESSID' => 'lmf6mcj3blkk6u98o8cla4cbp0'
+    'default' => 'vd4k3effjfogupu8gm104i9lr5'
+    '_identity-backend' => '449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"6mEgDVgcKYbMoh56elU67j_-OpPOcyTJ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fang/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WSAkG8CoAGgAAAZvfvgAAAAH'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/fang/backend/web/index.php?r=common%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-HK,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,zh-CN;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222rjPHisWFyqy337TcULkD6bhGGiVDUe2%22%3B%7D; advanced-backend=fnbsgfok5io6h774bl3b6oh8s3; PHPSESSID=lmf6mcj3blkk6u98o8cla4cbp0; default=vd4k3effjfogupu8gm104i9lr5; _identity-backend=449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%226mEgDVgcKYbMoh56elU67j_-OpPOcyTJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/7.0.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php'
+    'REMOTE_PORT' => '54491'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Findex'
+    'REQUEST_URI' => '/fang/backend/web/index.php?r=admin%2Findex'
+    'SCRIPT_NAME' => '/fang/backend/web/index.php'
+    'PHP_SELF' => '/fang/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495278619
+    'REQUEST_TIME' => 1495278619
+]
+2017-05-20 13:11:27 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][error][yii\base\ErrorException:4096] yii\base\ErrorException: Object of class common\models\Admin could not be converted to string in /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/common/_menu.php:22
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/common/_menu.php(22): yii\base\ErrorHandler->handleError(4096, 'Object of class...', '/Applications/X...', 22, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/layouts/main.php(27): yii\base\View->render('/common/_menu')
+#5 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\AdminController))
+#8 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<div id="p0" da...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/controllers/AdminController.php(27): yii\base\Controller->render('index', Array)
+#10 [internal function]: backend\controllers\AdminController->actionIndex()
+#11 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('admin/index', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-05-20 13:11:27 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][info][application] $_GET = [
+    'r' => 'admin/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"2rjPHisWFyqy337TcULkD6bhGGiVDUe2\";}'
+    'advanced-backend' => 'fnbsgfok5io6h774bl3b6oh8s3'
+    'PHPSESSID' => 'lmf6mcj3blkk6u98o8cla4cbp0'
+    'default' => 'vd4k3effjfogupu8gm104i9lr5'
+    '_identity-backend' => '449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"6mEgDVgcKYbMoh56elU67j_-OpPOcyTJ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fang/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WSAkX8CoAGgAAApDfyIAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/fang/backend/web/index.php?r=common%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-HK,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,zh-CN;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222rjPHisWFyqy337TcULkD6bhGGiVDUe2%22%3B%7D; advanced-backend=fnbsgfok5io6h774bl3b6oh8s3; PHPSESSID=lmf6mcj3blkk6u98o8cla4cbp0; default=vd4k3effjfogupu8gm104i9lr5; _identity-backend=449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%226mEgDVgcKYbMoh56elU67j_-OpPOcyTJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/7.0.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php'
+    'REMOTE_PORT' => '54505'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Findex'
+    'REQUEST_URI' => '/fang/backend/web/index.php?r=admin%2Findex'
+    'SCRIPT_NAME' => '/fang/backend/web/index.php'
+    'PHP_SELF' => '/fang/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495278687.538
+    'REQUEST_TIME' => 1495278687
+]
+2017-05-20 13:11:29 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][error][yii\base\ErrorException:4096] yii\base\ErrorException: Object of class common\models\Admin could not be converted to string in /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/common/_menu.php:22
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/common/_menu.php(22): yii\base\ErrorHandler->handleError(4096, 'Object of class...', '/Applications/X...', 22, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/layouts/main.php(27): yii\base\View->render('/common/_menu')
+#5 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\AdminController))
+#8 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<div id="p0" da...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/controllers/AdminController.php(27): yii\base\Controller->render('index', Array)
+#10 [internal function]: backend\controllers\AdminController->actionIndex()
+#11 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('admin/index', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-05-20 13:11:28 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][info][application] $_GET = [
+    'r' => 'admin/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"2rjPHisWFyqy337TcULkD6bhGGiVDUe2\";}'
+    'advanced-backend' => 'fnbsgfok5io6h774bl3b6oh8s3'
+    'PHPSESSID' => 'lmf6mcj3blkk6u98o8cla4cbp0'
+    'default' => 'vd4k3effjfogupu8gm104i9lr5'
+    '_identity-backend' => '449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"6mEgDVgcKYbMoh56elU67j_-OpPOcyTJ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fang/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WSAkYMCoAGgAAAkjf80AAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/fang/backend/web/index.php?r=common%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-HK,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,zh-CN;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222rjPHisWFyqy337TcULkD6bhGGiVDUe2%22%3B%7D; advanced-backend=fnbsgfok5io6h774bl3b6oh8s3; PHPSESSID=lmf6mcj3blkk6u98o8cla4cbp0; default=vd4k3effjfogupu8gm104i9lr5; _identity-backend=449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%226mEgDVgcKYbMoh56elU67j_-OpPOcyTJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/7.0.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php'
+    'REMOTE_PORT' => '54506'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Findex'
+    'REQUEST_URI' => '/fang/backend/web/index.php?r=admin%2Findex'
+    'SCRIPT_NAME' => '/fang/backend/web/index.php'
+    'PHP_SELF' => '/fang/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495278688.99
+    'REQUEST_TIME' => 1495278688
+]
+2017-05-20 13:11:41 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][error][ParseError] ParseError: syntax error, unexpected ';', expecting ',' or ')' in /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/common/_menu.php:22
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/views/layouts/main.php(27): yii\base\View->render('/common/_menu')
+#3 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\AdminController))
+#6 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<div id="p0" da...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/controllers/AdminController.php(27): yii\base\Controller->render('index', Array)
+#8 [internal function]: backend\controllers\AdminController->actionIndex()
+#9 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('admin/index', Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php(17): yii\base\Application->run()
+#15 {main}
+2017-05-20 13:11:41 [::1][2][fnbsgfok5io6h774bl3b6oh8s3][info][application] $_GET = [
+    'r' => 'admin/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"2rjPHisWFyqy337TcULkD6bhGGiVDUe2\";}'
+    'advanced-backend' => 'fnbsgfok5io6h774bl3b6oh8s3'
+    'PHPSESSID' => 'lmf6mcj3blkk6u98o8cla4cbp0'
+    'default' => 'vd4k3effjfogupu8gm104i9lr5'
+    '_identity-backend' => '449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"6mEgDVgcKYbMoh56elU67j_-OpPOcyTJ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fang/backend/web/index.php'
+    '__id' => 2
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WSAkbcCoAGgAAAljRSUAAAAK'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/fang/backend/web/index.php?r=common%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-HK,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,zh-CN;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222rjPHisWFyqy337TcULkD6bhGGiVDUe2%22%3B%7D; advanced-backend=fnbsgfok5io6h774bl3b6oh8s3; PHPSESSID=lmf6mcj3blkk6u98o8cla4cbp0; default=vd4k3effjfogupu8gm104i9lr5; _identity-backend=449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%226mEgDVgcKYbMoh56elU67j_-OpPOcyTJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/7.0.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php'
+    'REMOTE_PORT' => '54508'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Findex'
+    'REQUEST_URI' => '/fang/backend/web/index.php?r=admin%2Findex'
+    'SCRIPT_NAME' => '/fang/backend/web/index.php'
+    'PHP_SELF' => '/fang/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495278701.536
+    'REQUEST_TIME' => 1495278701
+]
+2017-05-20 13:16:57 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected '/' in /Applications/XAMPP/xamppfiles/htdocs/fang/backend/filters/AccessControlFilter.php:17
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\filters...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/controllers/BaseController.php(28): spl_autoload_call('backend\\filters...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Component.php(650): backend\controllers\BaseController->behaviors()
+#3 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Component.php(533): yii\base\Component->ensureBehaviors()
+#4 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('admin/index', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/fang/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2017-05-20 13:16:57 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"2rjPHisWFyqy337TcULkD6bhGGiVDUe2\";}'
+    'advanced-backend' => 'fnbsgfok5io6h774bl3b6oh8s3'
+    'PHPSESSID' => 'lmf6mcj3blkk6u98o8cla4cbp0'
+    'default' => 'vd4k3effjfogupu8gm104i9lr5'
+    '_identity-backend' => '449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"6mEgDVgcKYbMoh56elU67j_-OpPOcyTJ\",2592000]\";}'
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WSAlqcCoAGgAAANyX0QAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/fang/backend/web/index.php?r=admin%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-HK,zh;q=0.8,zh-TW;q=0.6,en-US;q=0.4,en;q=0.2,zh-CN;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=069676bdbb17c254c02b003c6ff6a24650de21f20d12a6dcec3e56a998086a6aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%222rjPHisWFyqy337TcULkD6bhGGiVDUe2%22%3B%7D; advanced-backend=fnbsgfok5io6h774bl3b6oh8s3; PHPSESSID=lmf6mcj3blkk6u98o8cla4cbp0; default=vd4k3effjfogupu8gm104i9lr5; _identity-backend=449b5c375c3e83e20b730ea935520cc18b8db229a93c2b91a49f0bccaabd4583a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%226mEgDVgcKYbMoh56elU67j_-OpPOcyTJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2h PHP/7.0.8 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/fang/backend/web/index.php'
+    'REMOTE_PORT' => '54590'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Findex'
+    'REQUEST_URI' => '/fang/backend/web/index.php?r=admin%2Findex'
+    'SCRIPT_NAME' => '/fang/backend/web/index.php'
+    'PHP_SELF' => '/fang/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495279017.213
+    'REQUEST_TIME' => 1495279017
+]

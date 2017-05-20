@@ -21,7 +21,6 @@ class AdminForm extends Admin
         return [
             ['username', 'trim'],
             ['username', 'required'],
-            //['username', 'unique', 'targetClass' => '\common\models\Admin', 'message' => 'This username has already been taken.'],
             ['username', 'unique', 'message' => 'This username has already been taken.'],
             ['username', 'string', 'min' => 2, 'max' => 255],
 
@@ -29,18 +28,20 @@ class AdminForm extends Admin
             ['email', 'required'],
             ['email', 'email'],
             ['email', 'string', 'max' => 255],
-            //['email', 'unique', 'targetClass' => '\common\models\Admin', 'message' => 'This email address has already been taken.'],
             ['email', 'unique', 'message' => 'This email address has already been taken.'],
 
             ['password', 'string', 'min' => 6],
+            ['password', 'required', 'when' => function ($model) {
+                return $this->getIsNewRecord();
+            }, 'whenClient' => 'function (attribute, value) {
+                return '.$this->getIsNewRecord().';
+            }'],
 
             ['comfirm', 'required', 'when' => function ($model) {
                 return mb_strlen($model->password) > 0;
             }, 'whenClient' => "function (attribute, value) {
-                return $('#adminform-password').length > 0;
+                return $('#adminform-password').val().length > 0;
             }"],
-
-            ['comfirm', 'string', 'min' => 6],
             ['comfirm', 'compare', 'compareAttribute' => 'password'],
         ];
     }
@@ -58,7 +59,9 @@ class AdminForm extends Admin
         $this->setAttribute('email', $data['email']);
         $this->setAttribute('status', $data['status']);
         $this->generateAuthKey();
-        $this->setPassword($data['password']);
+        if ($data['password']) {
+            $this->setPassword($data['password']);
+        }
         if ($this->getIsNewRecord()) {
             return $this->insert($runValidation, $attributeNames);
         } else {

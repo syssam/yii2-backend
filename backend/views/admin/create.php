@@ -16,6 +16,7 @@ PageForm::begin([
   'title' => $this->title,
   'headerButton' => 'backend\components\grid\headerButton',
   'model' => $model,
+  'panelTitle' => 'Create Admin',
 ]);
 ?>
 <?= $this->render('_form', [
