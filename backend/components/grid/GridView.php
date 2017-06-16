@@ -18,7 +18,7 @@ class GridView extends \yii\grid\GridView
 
     protected function renderPanelBody()
     {
-        return "<div class=\"panel-body\"><div class=\"table-responsive\">{items}\n".$this->renderPanelFooter().'</div>';
+        return "<div class=\"panel-body\"><div class=\"table-responsive\">{items}\n</div>".$this->renderPanelFooter().'</div>';
     }
 
     protected function renderPanelFooter()

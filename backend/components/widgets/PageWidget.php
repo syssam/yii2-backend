@@ -88,11 +88,12 @@ abstract class PageWidget extends \yii\base\Widget
                 $text = 'Success: ';
                 break;
               case 'danger':
-                $icon = 'fa-exclamation-circle';
+                $icon = 'fa fa-exclamation-circle';
                 $text = 'Warning: ';
                 break;
               default:
                 $icon = '';
+                $text = '';
                 break;
             }
             $messageHtml .= '<div class="alert alert-'.$key.'"><i class="'.$icon.'"></i> '.$text.$message.'<button type="button" class="close" data-dismiss="alert">×</button></div>';

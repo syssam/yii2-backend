@@ -109,7 +109,7 @@ $(document).ready(function() {
 	$(document).on('click', 'a[data-toggle=\'image\']', function(e) {
 		var $element = $(this);
 		var $popover = $element.data('bs.popover'); // element has bs popover?
-		
+
 		e.preventDefault();
 
 		// destroy all image popovers
@@ -134,11 +134,11 @@ $(document).ready(function() {
 		$('#button-image').on('click', function() {
 			var $button = $(this);
 			var $icon   = $button.find('> i');
-			
+
 			$('#modal-image').remove();
 
 			$.ajax({
-				url: 'index.php?route=common/filemanager&token=' + getURLVar('token') + '&target=' + $element.parent().find('input').attr('id') + '&thumb=' + $element.attr('id'),
+				url: 'image-manager/index?token=' + getURLVar('token') + '&target=' + $element.parent().find('input').attr('id') + '&thumb=' + $element.attr('id'),
 				dataType: 'html',
 				beforeSend: function() {
 					$button.prop('disabled', true);
@@ -199,7 +199,7 @@ $(document).ready(function() {
 		return this.each(function() {
 			var $this = $(this);
 			var $dropdown = $('<ul class="dropdown-menu" />');
-			
+
 			this.timer = null;
 			this.items = [];
 

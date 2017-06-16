@@ -16,6 +16,7 @@ return [
     'defaultRoute' => 'common',
     'components' => [
         'request' => [
+            'baseUrl' => '/backend',
             'csrfParam' => '_csrf-backend',
         ],
         'user' => [
@@ -50,14 +51,43 @@ return [
         'response' => [
             'class' => 'yii\web\Response',
         ],
+        'i18n' => [
+            'translations' => [
+                '*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    //'basePath' => '@app/messages',
+                    //'language' => 'zh-CN',
+                    'sourceLanguage' => 'en-US',
+                    'fileMap' => [
+                        'app' => 'app.php',
+                        'error' => 'error.php',
+                        'banner' => 'banner.php',
+                    ],
+                ],
+            ],
+        ],
+        'urlManager' => [
+            'baseUrl' => '/backend',
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+        ],
+        'urlFrontendManager' => [
+            'class' => 'yii\web\UrlManager',
+            'baseUrl' => '/',
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+        ],
+        'languageManager' => function () {
+            return new common\components\LanguageManager();
+        },
         /*
         'urlManager' => [
+            'baseUrl' => '/admin',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
-        ],
-        */
+        ],*/
     ],
     'params' => $params,
 ];

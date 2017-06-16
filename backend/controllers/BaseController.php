@@ -1,23 +1,25 @@
 <?php
+
 namespace backend\controllers;
 
 use Yii;
 use yii\web\Controller;
 use backend\filters\AccessControlFilter;
+
 /**
- * Site controller
+ * Site controller.
  */
 class BaseController extends Controller
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function actions()
     {
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
-            ]
+            ],
         ];
     }
 

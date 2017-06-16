@@ -6,9 +6,15 @@ class PageForm extends PageWidget
 {
     protected function renderHeaderButton()
     {
-        return $this->headerButton::widget([
-          'model' => $this->model,
-          'visibleButtons' => ['save', 'cancel'],
-        ]);
+        return call_user_func(
+            [
+              $this->headerButton,
+              'widget',
+            ],
+            [
+              'model' => $this->model,
+              'visibleButtons' => ['save', 'cancel'],
+            ]
+        );
     }
 }

@@ -29,20 +29,6 @@ class AdminController extends BaseController
     }
 
     /**
-     * Displays a single Admin model.
-     *
-     * @param int $id
-     *
-     * @return mixed
-     */
-    public function actionView($id)
-    {
-        return $this->render('view', [
-            'model' => $this->findModel($id),
-        ]);
-    }
-
-    /**
      * Creates a new Admin model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      *
@@ -53,7 +39,9 @@ class AdminController extends BaseController
         $model = new AdminForm();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            Yii::$app->session->setFlash('success', 'You have modified users!');
+
+            return $this->redirect(['index']);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -74,7 +62,9 @@ class AdminController extends BaseController
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            Yii::$app->session->setFlash('success', 'You have modified users!');
+
+            return $this->redirect(['index']);
         } else {
             return $this->render('update', [
                 'model' => $model,
