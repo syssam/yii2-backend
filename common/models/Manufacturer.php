@@ -40,7 +40,7 @@ class Manufacturer extends \yii\db\ActiveRecord
     {
         return [
             'manufacturer_id' => Yii::t('app', 'Manufacturer ID'),
-            'name' => Yii::t('app', 'Manufacturer Name'),
+            'name' => Yii::t('app', 'Name'),
             'image' => Yii::t('app', 'Image'),
             'sort_order' => Yii::t('app', 'Sort Order'),
         ];

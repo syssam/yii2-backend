@@ -53,6 +53,7 @@ class ManufacturerController extends BaseController
                 $manufacturer_description[$language->language_id]->manufacturer_id = $model->manufacturer_id;
                 $manufacturer_description[$language->language_id]->name = $post['ManufacturerDescription'][$language->language_id]['name'];
                 $manufacturer_description[$language->language_id]->description = $post['ManufacturerDescription'][$language->language_id]['description'];
+                $manufacturer_description[$language->language_id]->language_id = $language->language_id;
                 $manufacturer_description[$language->language_id]->save();
             }
 

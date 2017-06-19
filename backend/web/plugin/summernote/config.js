@@ -2,7 +2,7 @@ $(document).ready(function() {
 	// Override summernotes image manager
 	$('.summernote').each(function() {
 		var element = this;
-		
+
 		$(element).summernote({
 			disableDragAndDrop: true,
 			height: 300,
@@ -27,9 +27,9 @@ $(document).ready(function() {
 						tooltip: $.summernote.lang[$.summernote.options.lang].image.image,
 						click: function () {
 							$('#modal-image').remove();
-						
+
 							$.ajax({
-								url: 'index.php?route=common/filemanager&token=' + getURLVar('token'),
+								url: 'image-manager/index',
 								dataType: 'html',
 								beforeSend: function() {
 									$('#button-image i').replaceWith('<i class="fa fa-circle-o-notch fa-spin"></i>');
@@ -41,25 +41,25 @@ $(document).ready(function() {
 								},
 								success: function(html) {
 									$('body').append('<div id="modal-image" class="modal">' + html + '</div>');
-									
+
 									$('#modal-image').modal('show');
-									
+
 									$('#modal-image').delegate('a.thumbnail', 'click', function(e) {
 										e.preventDefault();
-										
+
 										$(element).summernote('insertImage', $(this).attr('href'));
-																	
+
 										$('#modal-image').modal('hide');
 									});
 								}
-							});						
+							});
 						}
 					});
-				
+
 					return button.render();
 				}
   			}
 		});
 	});
-	
+
 });

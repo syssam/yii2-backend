@@ -39,7 +39,7 @@ class ManufacturerDescription extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'name' => Yii::t('app', 'Manufacturer Name'),
+            'name' => Yii::t('app', 'Name'),
             'description' => Yii::t('app', 'Description'),
         ];
     }
