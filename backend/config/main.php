@@ -57,11 +57,12 @@ return [
                     'class' => 'yii\i18n\PhpMessageSource',
                     //'basePath' => '@app/messages',
                     //'language' => 'zh-CN',
-                    'sourceLanguage' => 'en-US',
+                    //'sourceLanguage' => 'en-US',
                     'fileMap' => [
                         'app' => 'app.php',
                         'error' => 'error.php',
                         'banner' => 'banner.php',
+                        'app/attribute' => 'attribute.php',
                     ],
                 ],
             ],

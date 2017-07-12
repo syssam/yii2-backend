@@ -30,6 +30,8 @@ class BannerImage extends \yii\db\ActiveRecord
     {
         return [
             [['sort_order'], 'integer'],
+            ['sort_order', 'default', 'value' => 0],
+            [['title'], 'required'],
             [['title'], 'string', 'max' => 64],
             [['link', 'image'], 'string', 'max' => 255],
         ];

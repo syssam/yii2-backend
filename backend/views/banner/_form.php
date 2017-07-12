@@ -1,9 +1,11 @@
 <?php
 
-use yii\widgets\ActiveForm;
+use backend\components\widgets\ActiveForm;
 use yii\web\View;
 use common\components\helpers\ImageHelper;
+use yii\helpers\Html;
 
+$model = isset($models[0]) ? $models[0] : $models;
 $form = ActiveForm::begin([
     'id' => $model->formName(),
     'options' => [
@@ -29,33 +31,32 @@ foreach ($model->attributes() as $attribute) {
     <tbody>
       <?php
       $image_row = 0;
-      foreach ($datas as $data) {
-          ?>
-      <tr id="image-row<?php echo $image_row; ?>">
-        <td class="text-left<?=isset($errors[$image_row.'.title']) ? ' has-error' : ''; ?>">
-          <div class="input-group pull-left"><span class="input-group-addon"></span>
-            <input type="text" name="<?=$formName."[{$image_row}]".$filed_name['title']?>" value="<?=$data['title']?>" class="form-control" />
-          </div>
-          <?=isset($errors[$image_row.'.title']) ? '<div class="help-block">'.$model->getFirstError($image_row.'.title')[0].'</div>' : ''; ?>
-        </td>
-        <td class="text-left<?=isset($errors[$image_row.'.link']) ? ' has-error' : ''?>">
-          <div class="input-group pull-left"><span class="input-group-addon"></span>
-            <input type="text" name="<?=$formName."[{$image_row}]".$filed_name['link']?>" value="<?=$data['link']?>" class="form-control" />
-          </div>
-          <?=isset($errors[$image_row.'.link']) ? '<div class="help-block">'.$model->getFirstError($image_row.'.link')[0].'</div>' : ''; ?>
-        </td>
-        <td class="text-center">
-          <a href="" id="thumb-image0" data-toggle="image" class="img-thumbnail">
-            <img src="<?=ImageHelper::resize($data['image'], 100, 100); ?>" data-placeholder="<?=ImageHelper::resize($data['image'], 100, 100); ?>">
-          </a>
-          <input type="hidden" name="<?=$formName."[{$image_row}]".$filed_name['image']?>" value="<?=$data['image']?>" id="input-image<?=$image_row?>">
-        </td>
-        <td class="text-right<?=isset($errors[$image_row.'.sort_order']) ? ' has-error' : ''?>">
-          <div class="input-group pull-left"><span class="input-group-addon"></span>
-            <input type="text" name="<?=$formName."[{$image_row}]".$filed_name['sort_order']?>" value="<?=$data['sort_order']?>" class="form-control" />
-          </div>
-          <?=isset($errors[$image_row.'.sort_order']) ? '<div class="help-block">'.$model->getFirstError($image_row.'.sort_order')[0].'</div>' : ''; ?>
-        </td>
+      foreach ($models as $model) { ?>
+      <tr id="image-row<?= $image_row; ?>">
+        <?= $form->field($model, "[{$image_row}]title", [
+          'template' => '<div class="input-group pull-left"><span class="input-group-addon"></span>{input}</div>{error}',
+          'options' => [
+            'tag' => 'td',
+          ],
+        ])->textInput() ?>
+        <?= $form->field($model, "[{$image_row}]link", [
+          'template' => '<div class="input-group pull-left"><span class="input-group-addon"></span>{input}</div>{error}',
+          'options' => [
+            'tag' => 'td',
+          ],
+        ])->textInput() ?>
+        <?= $form->field($model, "[{$image_row}]image", [
+          'template' => '{input}{error}',
+          'options' => [
+            'tag' => 'td',
+          ],
+        ])->ImageInput() ?>
+        <?= $form->field($model, "[{$image_row}]sort_order", [
+          'template' => '<div class="input-group pull-left"><span class="input-group-addon"></span>{input}</div>{error}',
+          'options' => [
+            'tag' => 'td',
+          ],
+        ])->textInput() ?>
         <td class="text-left">
           <button type="button" onclick="$('#image-row<?=$image_row?>').remove();" data-toggle="tooltip" class="btn btn-danger">
             <i class="fa fa-minus-circle"></i>

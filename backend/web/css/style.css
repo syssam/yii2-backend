@@ -369,7 +369,7 @@ span.hidden-xs, span.hidden-sm, span.hidden-md, span.hidden-lg {
 	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
 	box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
 }
-div.required .control-label:not(span):before, td.required:before {
+div.required .control-label:not(span):before, th.required:before {
 	content: '* ';
 	color: #F00;
 	font-weight: bold;
@@ -643,4 +643,16 @@ input[type="checkbox"]:checked::after, .checkbox input[type="checkbox"]:checked:
 /* Filemanager Folder Size */
 #filemanager .fa-folder.fa-5x {
 	font-size: 10.5em;
+}
+
+.well {
+	margin-bottom: 0px;
+}
+
+.has-error .well {
+	border-color: #a94442;
+}
+
+.well label {
+	display: block;
 }

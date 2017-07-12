@@ -1,31 +1,31 @@
 <?php
 
-namespace common\models;
+namespace backend\models;
 
+use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
+use common\models\IndustryType;
 
 /**
- * ManufacturerSearch represents the model behind the search form about `common\models\Manufacturer`.
+ * IndustryTypeSearch represents the model behind the search form about `common\models\IndustryType`.
  */
-class ManufacturerSearch extends Manufacturer
+class IndustryTypeSearch extends IndustryType
 {
     public $name;
-
     /**
-     * {@inheritdoc}
+     * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['manufacturer_id', 'sort_order'], 'integer'],
-            [['image'], 'safe'],
+            [['industry_type_id', 'status', 'sort_order'], 'integer'],
             [['name'], 'string', 'max' => 255],
         ];
     }
 
     /**
-     * {@inheritdoc}
+     * @inheritdoc
      */
     public function scenarios()
     {
@@ -34,7 +34,7 @@ class ManufacturerSearch extends Manufacturer
     }
 
     /**
-     * Creates data provider instance with search query applied.
+     * Creates data provider instance with search query applied
      *
      * @param array $params
      *
@@ -42,9 +42,8 @@ class ManufacturerSearch extends Manufacturer
      */
     public function search($params)
     {
-        //$query = Manufacturer::find()->select('*')->leftJoin('manufacturer_description', '`manufacturer`.`manufacturer_id` = `manufacturer_description`.`manufacturer_id` and `language_id` = 1');
-        //$query = Manufacturer::find()->joinWith('manufacturerDescription');
-        $query = Manufacturer::find()->joinWith('manufacturerDescription');
+        $query = IndustryType::find()->joinWith('industryTypeDescription');
+
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
@@ -52,8 +51,8 @@ class ManufacturerSearch extends Manufacturer
         ]);
 
         $dataProvider->sort->attributes['name'] = [
-             'asc' => ['manufacturer_description.name' => SORT_ASC],
-             'desc' => ['manufacturer_description.name' => SORT_DESC],
+             'asc' => ['industry_type_description.name' => SORT_ASC],
+             'desc' => ['industry_type_description.name' => SORT_DESC],
         ];
 
         $this->load($params);
@@ -66,12 +65,12 @@ class ManufacturerSearch extends Manufacturer
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'manufacturer_id' => $this->manufacturer_id,
+            'industry_type_id' => $this->industry_type_id,
+            'status' => $this->status,
             'sort_order' => $this->sort_order,
         ]);
 
-        //$query->andFilterWhere(['like', 'image', $this->image]);
-        $query->andFilterWhere(['like', 'manufacturer_description.name', $this->name.'%', false]);
+        $query->andFilterWhere(['like', 'industry_type_description.name', $this->name.'%', false]);
 
         return $dataProvider;
     }

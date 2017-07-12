@@ -48,6 +48,7 @@ class Manufacturer extends \yii\db\ActiveRecord
 
     public function getManufacturerDescription()
     {
-        return $this->hasOne(ManufacturerDescription::className(), ['manufacturer_id' => 'manufacturer_id'])->andWhere(['language_id' => Yii::$app->languageManager->getDefaultId()]);
+        return $this->hasOne(ManufacturerDescription::className(), ['manufacturer_id' => 'manufacturer_id'])
+        ->andOnCondition(['language_id' => Yii::$app->languageManager->getDefaultId()]);
     }
 }

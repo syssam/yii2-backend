@@ -18,7 +18,7 @@ use yii\widgets\ActiveForm;
       'labelOptions' => [
           'class' => 'col-sm-2 control-label',
       ],
-    ])->textInput(['autofocus' => true]) ?>
+    ])->textInput(['autofocus' => true) ?>
     <?= $form->field($model, 'email', [
       'template' => '{label}<div class="col-sm-10">{input}{error}</div>',
       'labelOptions' => [

@@ -28,7 +28,6 @@ class ManufacturerDescription extends \yii\db\ActiveRecord
     {
         return [
             [['name'], 'required'],
-            [['language_id', 'manufacturer_id'], 'integer'],
             [['name'], 'string', 'max' => 255],
         ];
     }

@@ -5,7 +5,7 @@ namespace backend\controllers;
 use Yii;
 use yii\base\Model;
 use common\models\Manufacturer;
-use common\models\ManufacturerSearch;
+use backend\models\ManufacturerSearch;
 use common\models\ManufacturerDescription;
 use yii\web\NotFoundHttpException;
 
@@ -57,7 +57,7 @@ class ManufacturerController extends BaseController
                 $manufacturer_description[$language->language_id]->save();
             }
 
-            Yii::$app->session->setFlash('success', 'You have modified users!');
+            Yii::$app->session->setFlash('success', 'You have modified manufacturer!');
 
             return $this->redirect('index');
         } else {
@@ -99,7 +99,7 @@ class ManufacturerController extends BaseController
                 $manufacturer_description[$language->language_id]->save();
             }
 
-            Yii::$app->session->setFlash('success', 'You have modified users!');
+            Yii::$app->session->setFlash('success', 'You have modified manufacturer!');
 
             return $this->redirect('index');
         } else {

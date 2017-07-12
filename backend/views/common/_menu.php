@@ -21,7 +21,13 @@ if (Yii::$app->user->isGuest) {
     <li id="menu-catalog" class="active open">
       <a class="parent"><i class="fa fa-tags fw"></i> <span>Catalog</span></a>
       <ul>
+        <li><a href="<?= Url::to(['park/index']); ?>">Parks</a></li>
+        <li><a href="<?= Url::to(['factory/index']); ?>">Factories</a></li>
+        <li><a href="<?= Url::to(['attribute/index']); ?>">Attributes</a></li>
         <li><a href="<?= Url::to(['manufacturer/index']); ?>">Manufacturers</a></li>
+        <li><a href="<?= Url::to(['park-type/index']); ?>">Park Type</a></li>
+        <li><a href="<?= Url::to(['industry-type/index']); ?>">Industry Type</a></li>
+        <li><a href="<?= Url::to(['zone/index']); ?>">Zone</a></li>
       </ul>
     </li>
     <li id="menu-customer">

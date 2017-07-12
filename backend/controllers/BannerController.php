@@ -3,61 +3,42 @@
 namespace backend\controllers;
 
 use common\models\BannerImage;
+use yii\base\Model;
+use Yii;
 
 class BannerController extends BaseController
 {
     public function actionIndex()
     {
-        $model = new BannerImage();
+        $request = Yii::$app->request;
+        $models = [new BannerImage()];
 
-        $post = \Yii::$app->request->post('BannerImage');
-        if ($post) {
-            if ($this->validate($model, $post)) {
-                $model::deleteAll();
-                $save = true;
-                foreach ($post as $key => $data) {
-                    $model->title = $data['title'];
-                    $model->link = $data['link'];
-                    $model->image = $data['image'];
-                    $model->sort_order = $data['sort_order'];
-                    $save = $model->insert() && $save ? true : false;
-                }
-                if ($save) {
-                    \Yii::$app->session->setFlash('success', 'You have modified banners!');
-                } else {
-                    \Yii::$app->session->setFlash('danger', 'Something is wrong!');
-                }
+        if ($request->isPost) {
+            $post = $request->post('BannerImage');
+            $count = count(Yii::$app->request->post('BannerImage', []));
 
-                return $this->redirect(['index']);
+            for ($i = 1; $i < $count; ++$i) {
+                $models[] = new BannerImage();
             }
-            $datas = $post;
+
+            if (Model::loadMultiple($models, $request->post()) && Model::validateMultiple($models)) {
+                $models[0]::deleteAll();
+                foreach ($models as $model) {
+                    $model->save(false);
+                }
+                Yii::$app->session->setFlash('success', 'You have modified banners!');
+
+                return $this->redirect('index');
+            }
         } else {
-            $datas = $model::find()->orderBy(['sort_order' => SORT_ASC])->all();
+            $data = BannerImage::find()->orderBy(['sort_order' => SORT_ASC])->all();
+            if ($data) {
+                $models = $data;
+            }
         }
 
         return $this->render('index', [
-            'model' => $model,
-            'datas' => $datas,
-            'errors' => $model->getErrors(),
+            'models' => $models,
         ]);
-    }
-
-    private function validate($model, $data)
-    {
-        $errors = [];
-
-        foreach ($data as $index => $value) {
-            $model->title = $value['title'];
-            $model->link = $value['link'];
-            $model->image = $value['image'];
-            $model->sort_order = $value['sort_order'];
-            if (!$model->validate()) {
-                foreach ($model->getErrors() as $key => $value) {
-                    $model->addError($index.'.'.$key, $value);
-                }
-            }
-        }
-
-        return !$model->hasErrors();
     }
 }

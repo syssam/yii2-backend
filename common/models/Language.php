@@ -36,6 +36,6 @@ class Language extends \yii\db\ActiveRecord
 
     public static function findLanguages()
     {
-        return static::findAll(['status' => self::STATUS_ACTIVE]);
+        return static::find(['status' => self::STATUS_ACTIVE])->indexBy('language_id')->orderBy('sort_order')->all();
     }
 }

@@ -60,7 +60,6 @@ class AdminController extends BaseController
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             Yii::$app->session->setFlash('success', 'You have modified users!');
 

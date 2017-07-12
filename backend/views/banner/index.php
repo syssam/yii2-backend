@@ -15,14 +15,12 @@ $this->params['breadcrumbs'][] = [
 PageForm::begin([
   'title' => $this->title,
   'headerButton' => 'backend\components\grid\headerButton',
-  'model' => $model,
+  'model' => isset($models[0]) ? $models[0] : $models,
   'panelTitle' => 'Edit Banner',
 ]);
 ?>
 <?= $this->render('_form', [
-    'model' => $model,
-    'datas' => $datas,
-    'errors' => $errors,
+    'models' => $models,
 ]) ?>
 <?php
 PageForm::end();
