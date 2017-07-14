@@ -114,7 +114,7 @@ class IndustryTypeController extends BaseController
      *
      * @return mixed
      */
-    public function actionDelete($id)
+    public function actionDelete()
     {
         $request = Yii::$app->request;
         if ($request->getIsAjax()) {

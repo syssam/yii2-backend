@@ -82,7 +82,6 @@ class AdminController extends BaseController
     public function actionDelete()
     {
         $request = Yii::$app->request;
-        Yii::$app->session->setFlash('success', 'You have delete users!');
         if ($request->getIsAjax()) {
             Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
             $selection = $request->post('selection');

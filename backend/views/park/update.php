@@ -20,7 +20,16 @@ PageForm::begin([
 ?>
 
 <?= $this->render('_form', [
+    'zones' => $zones,
+    'park_types' => $park_types,
+    'manufacturers' => $manufacturers,
+    'industry_types' => $industry_types,
+    'park_to_industry_type' => $park_to_industry_type,
     'model' => $model,
+    'attributes' => $attributes,
+    'park_description' => $park_description,
+    'park_attributes' => $park_attributes,
+    'languages' => $languages,
 ]) ?>
 
 <?php

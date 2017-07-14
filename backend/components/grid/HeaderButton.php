@@ -108,9 +108,9 @@ class HeaderButton extends Widget
               url: $(this).data('url'),
               data:data,
               success:function(data){
-                if(data.message !== 'undefined') {
+                if(data.message) {
                   alert(data.message);
-                }else{
+                } else {
                   location.reload();
                 };
               },

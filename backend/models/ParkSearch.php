@@ -12,6 +12,7 @@ use common\models\Park;
  */
 class ParkSearch extends Park
 {
+    public $name;
     /**
      * @inheritdoc
      */
@@ -20,6 +21,7 @@ class ParkSearch extends Park
         return [
             [['park_id', 'location_id', 'park_type_id', 'manufacturer_id', 'status', 'sort_order', 'created_at', 'updated_at'], 'integer'],
             [['telephone'], 'safe'],
+            [['name'], 'string', 'max' => 255],
         ];
     }
 
@@ -41,13 +43,18 @@ class ParkSearch extends Park
      */
     public function search($params)
     {
-        $query = Park::find();
+        $query = Park::find()->joinWith('parkDescription');
 
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
+
+        $dataProvider->sort->attributes['name'] = [
+             'asc' => ['park_description.name' => SORT_ASC],
+             'desc' => ['park_description.name' => SORT_DESC],
+        ];
 
         $this->load($params);
 
@@ -69,7 +76,7 @@ class ParkSearch extends Park
             'updated_at' => $this->updated_at,
         ]);
 
-        $query->andFilterWhere(['like', 'telephone', $this->telephone]);
+        $query->andFilterWhere(['like', 'park_description.name', $this->name.'%', false]);
 
         return $dataProvider;
     }

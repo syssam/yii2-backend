@@ -33,17 +33,33 @@ PageSearch::begin([
                   return ['value' => $model->park_id];
               },
             ],
-
-            'park_id',
-            'location_id',
-            'park_type_id',
-            'manufacturer_id',
-            'telephone',
-            // 'status',
-            // 'sort_order',
-            // 'created_at',
-            // 'updated_at',
-
+            [
+                'attribute' => 'name',
+                'value' => 'parkDescription.name',
+            ],
+            [
+                'class' => 'yii\grid\DataColumn',
+                'attribute' => 'park_type_id',
+                'value' => function ($model, $key, $index, $column) {
+                    return isset($column->filter[$model->park_type_id]) ? $column->filter[$model->park_type_id] : '';
+                },
+                'filter' => $park_types,
+            ],
+            [
+                'class' => 'yii\grid\DataColumn',
+                'attribute' => 'manufacturer_id',
+                'value' => function ($model, $key, $index, $column) {
+                    return isset($column->filter[$model->manufacturer_id]) ? $column->filter[$model->manufacturer_id] : '';
+                },
+                'filter' => $manufacturers,
+            ],
+            [
+                'attribute' => 'status',
+                'value' => function ($model) {
+                    return $model->status == $model::STATUS_ACTIVE ? 'Enabled' : 'Disabled';
+                },
+                'filter' => array($searchModel::STATUS_ACTIVE => 'Enabled', $searchModel::STATUS_DELETED => 'Disabled'),
+            ],
             ['class' => 'backend\components\grid\ActionColumn'],
         ],
     ]); ?>
